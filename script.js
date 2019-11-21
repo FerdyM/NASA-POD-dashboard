@@ -41,5 +41,7 @@ function functionName() {
 }
 
 function displayItem(item) {
-    document.querySelector('.important-item').innerHTML = item
+    document.querySelector('.important-item').innerHTML = "Your most important task: " + item
+    document.querySelector('.input-line').classList.add('hidden')
+    document.querySelector('.input-button').classList.add('hidden')
 }
