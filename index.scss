@@ -6,7 +6,7 @@ body {
 .container {
     width: 100%;
     max-height: 100vh;
-    background: grey;
+    background: #185050;
     display: grid;
     grid-template-rows: 20% 1fr 1fr;
     grid-template-columns: 2fr 3fr;
@@ -28,9 +28,16 @@ p {
     padding: 20px;
 }
 .imgdiv {
-    padding: 20px;
+    background: #1F3E5A;
+    border-radius: 10px;
+    height: 90%;
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
     grid-row: 2/4;
     grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
     img {
         height: 100%;
         width: 100%;

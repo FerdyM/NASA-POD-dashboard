@@ -39,7 +39,15 @@ function setDate() {
     let minutes = now.getMinutes()
     let hours = now.getHours()
 
-    document.querySelector('.clock').innerHTML = `${hours} : ${minutes}`
+    if (minutes < 10  && hours < 10) {
+        document.querySelector('.clock').innerHTML = `0${hours} : 0${minutes}`
+    } else if (hours < 10) {
+        document.querySelector('.clock').innerHTML = `0${hours} : ${minutes}`
+    } else if (minutes < 10) {
+        document.querySelector('.clock').innerHTML = `${hours} : 0${minutes}`
+    } else {
+        document.querySelector('.clock').innerHTML = `${hours} : ${minutes}`
+    }   
 }
 
 function functionName() {
