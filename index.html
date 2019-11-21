@@ -8,15 +8,26 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <h1 class="title"></h1>
-        <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="imgdiv">
+            <img src="" alt="" class="pic-of-day">
+            <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <form class="form" >
+            First name:<br>
+            <input type="text" id="firstname" name="firstname" value="Mickey"><br>
+            <button type="button" onclick="functionName()">Submit</button>
+        </form>
+        <ol class="list">
+
+        </ol>
         <p class="description"></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
