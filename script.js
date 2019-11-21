@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let title = document.querySelector('.title')
     let desc = document.querySelector('.description')
     let form = document.querySelector('.form')
-    
 
     $.getJSON("https://api.nasa.gov/planetary/apod?api_key=ewOaDXWglBEsQAKX2SApET8IsuyxxW6hCydetUE3")
 
@@ -30,10 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('ah')
     })
 
-    
-    
+    setInterval(setDate(), 1000);
+    setDate()
 })
+function setDate() {
+    let now = new Date()
 
+    let seconds = now.getSeconds()
+    let minutes = now.getMinutes()
+    let hours = now.getHours()
+
+    document.querySelector('.clock').innerHTML = `${hours} : ${minutes}`
+}
 
 function functionName() {
     item = document.getElementById('firstname').value

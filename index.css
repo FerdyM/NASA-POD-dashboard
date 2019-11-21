@@ -19,16 +19,17 @@ body {
 h1 {
   margin: 0;
   padding: 20px;
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 2;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 1/2;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 p {
@@ -63,12 +64,12 @@ p {
 }
 
 .form {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   height: 100px;
   width: 500px;
   display: -webkit-box;
@@ -77,6 +78,7 @@ p {
   padding: 20px;
   -ms-flex-item-align: center;
       align-self: center;
+  justify-self: center;
 }
 
 #firstname {
@@ -105,17 +107,48 @@ p {
 }
 
 .important-item {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  grid-column: 2/3;
   justify-self: flex-end;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   color: white;
   font-size: 36px;
+}
+
+.clock {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 200px;
+  height: 60px;
+  background: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.list {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */
