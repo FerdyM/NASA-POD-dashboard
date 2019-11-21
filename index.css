@@ -64,4 +64,25 @@ p {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
 }
+
+#firstname {
+  width: 400px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.important-item {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=index.css.map */

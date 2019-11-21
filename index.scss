@@ -39,4 +39,17 @@ p {
 .form {
     grid-row: 2/3;
     grid-column: 1/2;
+    // display: flex;
+}
+#firstname {
+    width: 400px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.important-item {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
 }

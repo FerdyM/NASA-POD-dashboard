@@ -33,17 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
 })
-let list = document.querySelector('.list')
-let items = []
+
 
 function functionName() {
-    items.push(document.getElementById('firstname').value)
-    console.log(items)
-    items.forEach(displayItems)
+    item = document.getElementById('firstname').value
+    displayItem(item)
 }
 
-function displayItems(item, index) {
-    let li = document.createElement('li')
-    li.innerHTML = item
-    list.appendChild(li)
+function displayItem(item) {
+    document.querySelector('.important-item').innerHTML = item
 }
