@@ -27,9 +27,8 @@ h1 {
   grid-column: 1/2;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   color: white;
 }
 
@@ -44,6 +43,11 @@ p {
   grid-column: 1/2;
   padding: 20px;
   color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .imgdiv {
