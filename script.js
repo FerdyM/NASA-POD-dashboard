@@ -28,9 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', () => {
         console.log('ah')
     })
-
+    console.log(localStorage.length)
     setInterval(setDate(), 1000);
     setDate()
+    
+    if (localStorage.length > 0) {
+        displayItem()
+    }
 })
 function setDate() {
     let now = new Date()
@@ -52,10 +56,12 @@ function setDate() {
 
 function functionName() {
     item = document.getElementById('firstname').value
-    displayItem(item)
+    localStorage.setItem('item', JSON.stringify(item))
+    displayItem()
 }
 
-function displayItem(item) {
+function displayItem() {
+    let item = JSON.parse(localStorage.getItem('item'));
     document.querySelector('.important-item').innerHTML = "Your most important task: " + item
     document.querySelector('.input-line').classList.add('hidden')
     document.querySelector('.input-button').classList.add('hidden')
