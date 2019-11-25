@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', () => {
         console.log('ah')
     })
-    console.log(localStorage.length)
     setInterval(setDate(), 1000);
     setDate()
     
@@ -36,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         displayItem()
     }
 })
+
 function setDate() {
     let now = new Date()
 
